@@ -30,7 +30,7 @@ int main() {
     h3.print();
     std::cout << "\n";
 
-    // === Старая версия сотрудников ===
+    // Старая версия сотрудников
     Department it_old("IT");
     Employee petrov("Петров", &it_old);
     Employee kozlov("Козлов", &it_old);
@@ -43,7 +43,7 @@ int main() {
     sidorov.print();
     std::cout << "\n";
 
-    // === Новая версия сотрудников ===
+    // Новая версия сотрудников
     Department2 it_new("IT");
     Employee2 petrov2("Петров", &it_new);
     Employee2 kozlov2("Козлов", &it_new);
