@@ -5,11 +5,6 @@
 #include <iostream>
 
 class Name {
- private:
-  std::string last_name_;
-  std::string first_name_;
-  std::string middle_name_;
-
  public:
   Name();
   Name(const std::string& last_name,
@@ -18,6 +13,11 @@ class Name {
 
   std::string to_string() const;
   void print() const;
+
+ private:
+  std::string last_name_;
+  std::string first_name_;
+  std::string middle_name_;
 };
 
 #endif  // NAME_H

@@ -7,10 +7,6 @@
 #include "department2.h"
 
 class Employee2 {
- private:
-  std::string name_;
-  Department2* department_;
-
  public:
   Employee2(const std::string& name, Department2* department);
   void set_department(Department2* department);
@@ -19,6 +15,10 @@ class Employee2 {
   void print() const;
 
   std::vector<Employee2*> get_colleagues() const;
+  
+ private:
+  std::string name_;
+  Department2* department_;
 };
 
 #endif  // EMPLOYEE2_H

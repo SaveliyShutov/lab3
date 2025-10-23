@@ -11,9 +11,10 @@ Name2::Name2(const std::string& first_name, const std::string& last_name, const 
 
 std::string Name2::to_string() const {
   std::string result;
-  if (!last_name_.empty()) result += last_name_ + " ";
   result += first_name_;
+  if (!last_name_.empty()) result += " " + last_name_;
   if (!patronymic_.empty()) result += " " + patronymic_;
+
   return result;
 }
 

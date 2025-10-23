@@ -8,11 +8,6 @@
 class Employee2;  // forward declaration
 
 class Department2 {
- private:
-  std::string name_;
-  Employee2* manager_;
-  std::vector<Employee2*> employees_;
-
  public:
   Department2(const std::string& name);
   void set_manager(Employee2* manager);
@@ -21,6 +16,11 @@ class Department2 {
 
   void add_employee(Employee2* employee);
   const std::vector<Employee2*>& get_employees() const;
+    
+ private:
+  std::string name_;
+  Employee2* manager_;
+  std::vector<Employee2*> employees_;
 };
 
 #endif  // DEPARTMENT2_H

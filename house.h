@@ -5,15 +5,15 @@
 #include <iostream>
 
 class House {
- private:
-  int floors_;
-
-  std::string get_floor_word(int n) const;
-
  public:
   explicit House(int floors);
   std::string to_string() const;
   void print() const;
+  
+ private:
+  int floors_;
+
+  std::string get_floor_word(int n) const;
 };
 
 #endif  // HOUSE_H
